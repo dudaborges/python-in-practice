@@ -20,5 +20,5 @@ requisicao = requests.delete('https://requests-16843-default-rtdb.firebaseio.com
 print(requisicao.json())
 
 # substitui o dado
-requisicao = requests.delete('https://requests-16843-default-rtdb.firebaseio.com//1.json')
+requisicao = requests.put('https://requests-16843-default-rtdb.firebaseio.com//1.json')
 print(requisicao.json())
