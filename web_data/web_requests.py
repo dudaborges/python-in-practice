@@ -6,5 +6,5 @@ response = requests.get(url)
 htmlUrl = response.content
 soup = BeautifulSoup(htmlUrl, 'html.parser')
 text = soup.get_text()
-with open("web.txt", "w", encoding="utf-8") as file:
+with open("./web_data/web.txt", "w", encoding="utf-8") as file:
     file.write(text.lower())
